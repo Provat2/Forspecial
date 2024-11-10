@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Cute, Ridi</title>
+    <style>
+        /* Body styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* Soft pastel gradient */
+            font-family: 'Cursive', sans-serif;
+            color: #ff66b2;
+            overflow: hidden;
+        }
+
+        /* Container styling with float animation */
+        .container {
+            background-color: #ffffffcc;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            animation: float 4s ease-in-out infinite, fadeIn 1.5s ease;
+        }
+
+        /* Calligraphy text styling with pulsing animation */
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin: 0;
+            color: #ff69b4;
+            text-shadow: 1px 1px 2px #ff8fab;
+            animation: pulse 2s infinite;
+        }
+
+        /* Flower image styling with slide-in animation */
+        .flower-bouquet {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 200px;
+            border-radius: 10px;
+            animation: slideIn 1.5s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect for bouquet image */
+        .flower-bouquet:hover {
+            transform: scale(1.1);
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    <!-- Link to Google Fonts for a calligraphy style -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Calligraphy text with pulsing effect -->
+        <h1>You're cute, Ridi</h1>
+
+        <!-- Flower bouquet image with slide-in effect -->
+        <img src="https://example.com/flower-bouquet.jpg" alt="Bouquet of flowers" class="flower-bouquet">
+    </div>
+
+</body>
+</html>
